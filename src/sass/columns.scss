@@ -1,0 +1,72 @@
+//Primary Color
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+
+// Neutral Color
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin font-document(
+  $family-primary,
+  $family-secondary,
+  $font-weight,
+  $font-size
+) {
+  font-family: $family-primary, $family-secondary;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+body {
+  background-color: $Light-grayish-blue;
+
+  main {
+    margin: 8rem;
+
+    .container {
+      //border: 1px solid;
+      border-radius: 0.5rem;
+
+      .author-name {
+        @include font-document('Barlow Semi Condensed', sans-serif, 600, 13px);
+      }
+      .status-verified {
+        @include font-document('Barlow Semi Condensed', sans-serif, 500, 13px);
+      }
+      .narrative1 {
+        @include font-document('Barlow Semi Condensed', sans-serif, 600, 13px);
+      }
+      .narrative2 {
+        @include font-document('Barlow Semi Condensed', sans-serif, 500, 13px);
+      }
+    }
+
+    .container:nth-child(1) {
+      background-color: $Moderate-violet;
+    }
+
+    .container:nth-child(2) {
+      background-color: $Very-dark-grayish-blue;
+    }
+
+    .container:nth-child(3) {
+      background-color: $White;
+    }
+
+    .container:nth-child(4) {
+      background-color: $Very-dark-blackish-blue;
+    }
+
+    .container:nth-child(5) {
+      background-color: $White;
+    }
+  }
+}
