@@ -16,40 +16,39 @@ $Light-grayish-blue: hsl(210, 46%, 95%);
   box-sizing: border-box;
 }
 
-@mixin styles-container(
-  $background-color,
-  $family-primary,
-  $family-secondary,
-  $font-weight-primary,
-  $font-weight-secondary,
-  $color-highlight,
-  $color-secundary
-) {
+@mixin styles-container($background-color, $color-highlight, $color-secundary) {
   background-color: $background-color;
 
   .author-name {
-    font-family: $family-primary, $family-secondary;
-    font-weight: $font-weight-primary;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
     font-size: 13px;
     color: $color-highlight;
   }
+
   .status-verified {
-    font-family: $family-primary, $family-secondary;
-    font-weight: $font-weight-secondary;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
     font-size: 10px;
     color: $color-secundary;
   }
+
   .narrative1 {
-    font-family: $family-primary, $family-secondary;
-    font-weight: $font-weight-primary;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
     font-size: 17px;
     color: $color-highlight;
   }
+
   .narrative2 {
-    font-family: $family-primary, $family-secondary;
-    font-weight: $font-weight-secondary;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
     font-size: 13px;
     color: $color-secundary;
+  }
+
+  img {
+    @include border-img($Light-gray-opacity, 2rem);
   }
 }
 
@@ -68,7 +67,9 @@ body {
   //justify-content: center;
 
   main {
-    margin: 9rem;
+    margin: auto;
+    width: 80vw;
+    //height: 50vh;
     display: grid;
     grid-template-areas:
       'cont1 cont1 cont2 cont3'
@@ -80,8 +81,6 @@ body {
     .container {
       border-radius: 0.5rem;
       padding: 1.8rem;
-      //display: flex;
-      //flex-direction: column;
 
       .header-author {
         width: 10rem;
@@ -90,8 +89,6 @@ body {
           'avatar name-author'
           'avatar status-author';
         grid-template-columns: 1fr 3fr;
-        //rid-template-rows: 1fr 1fr;
-        //flex-direction: column;
       }
 
       img {
@@ -104,12 +101,10 @@ body {
 
       .status-verified {
         grid-area: status-author;
-        //font-size: 10px;
       }
 
       .narrative1 {
         margin-top: 1rem;
-        //z-index: 2;
       }
 
       .narrative2 {
@@ -119,18 +114,17 @@ body {
 
     .container:nth-child(1) {
       grid-area: cont1;
+      position: relative;
+
       @include styles-container(
         $Moderate-violet,
-        'Barlow Semi Condensed',
-        sans-serif,
-        600,
-        500,
         $Light-gray,
         $Light-gray-opacity
       );
 
-      img {
-        @include border-img($Light-gray-opacity, 2rem);
+      .narrative1 {
+        position: relative;
+        z-index: 1;
       }
 
       #quotation {
@@ -138,8 +132,10 @@ body {
         border-radius: 0;
         width: 6rem;
         height: auto;
+        top: 0%;
+        left: 60%;
         position: absolute;
-        //z-index: 0.5;
+        z-index: 0;
       }
     }
 
@@ -147,68 +143,36 @@ body {
       grid-area: cont2;
       @include styles-container(
         $Very-dark-grayish-blue,
-        'Barlow Semi Condensed',
-        sans-serif,
-        600,
-        500,
         $Light-gray,
         $Light-gray-opacity
       );
-
-      img {
-        @include border-img($Light-gray-opacity, 2rem);
-      }
     }
 
     .container:nth-child(3) {
       grid-area: cont4;
       @include styles-container(
         $White,
-        'Barlow Semi Condensed',
-        sans-serif,
-        600,
-        500,
         $Very-dark-grayish-blue,
         $Very-dark-blackish-blue-opacity
       );
-
-      img {
-        @include border-img($Light-gray-opacity, 2rem);
-      }
     }
 
     .container:nth-child(4) {
       grid-area: cont5;
       @include styles-container(
         $Very-dark-blackish-blue,
-        'Barlow Semi Condensed',
-        sans-serif,
-        600,
-        500,
         $Light-gray,
         $Light-gray-opacity
       );
-
-      img {
-        @include border-img($Light-gray-opacity, 2rem);
-      }
     }
 
     .container:nth-child(5) {
       grid-area: cont3;
       @include styles-container(
         $White,
-        'Barlow Semi Condensed',
-        sans-serif,
-        600,
-        500,
         $Very-dark-grayish-blue,
         $Very-dark-blackish-blue-opacity
       );
-
-      img {
-        @include border-img($Light-gray-opacity, 2rem);
-      }
     }
   }
 }

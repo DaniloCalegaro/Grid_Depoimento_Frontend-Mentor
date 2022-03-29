@@ -15,7 +15,8 @@ body {
 }
 
 body main {
-  margin: 9rem;
+  margin: auto;
+  width: 80vw;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'cont1 cont1 cont2 cont3' 'cont4 cont5 cont5 cont3';
@@ -72,32 +73,33 @@ body main .container:nth-child(1) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: cont1;
+  position: relative;
   background-color: #7541c8;
 }
 
 body main .container:nth-child(1) .author-name {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 13px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(1) .status-verified {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 10px;
   color: rgba(207, 207, 207, 0.5);
 }
 
 body main .container:nth-child(1) .narrative1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 17px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(1) .narrative2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: rgba(207, 207, 207, 0.5);
@@ -110,12 +112,20 @@ body main .container:nth-child(1) img {
   border-radius: 50%;
 }
 
+body main .container:nth-child(1) .narrative1 {
+  position: relative;
+  z-index: 1;
+}
+
 body main .container:nth-child(1) #quotation {
   border: 0px;
   border-radius: 0;
   width: 6rem;
   height: auto;
+  top: 0%;
+  left: 60%;
   position: absolute;
+  z-index: 0;
 }
 
 body main .container:nth-child(2) {
@@ -126,28 +136,28 @@ body main .container:nth-child(2) {
 }
 
 body main .container:nth-child(2) .author-name {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 13px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(2) .status-verified {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 10px;
   color: rgba(207, 207, 207, 0.5);
 }
 
 body main .container:nth-child(2) .narrative1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 17px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(2) .narrative2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: rgba(207, 207, 207, 0.5);
@@ -168,28 +178,28 @@ body main .container:nth-child(3) {
 }
 
 body main .container:nth-child(3) .author-name {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 13px;
   color: #48556a;
 }
 
 body main .container:nth-child(3) .status-verified {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 10px;
   color: rgba(25, 33, 46, 0.5);
 }
 
 body main .container:nth-child(3) .narrative1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 17px;
   color: #48556a;
 }
 
 body main .container:nth-child(3) .narrative2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: rgba(25, 33, 46, 0.5);
@@ -211,28 +221,28 @@ body main .container:nth-child(4) {
 }
 
 body main .container:nth-child(4) .author-name {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 13px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(4) .status-verified {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 10px;
   color: rgba(207, 207, 207, 0.5);
 }
 
 body main .container:nth-child(4) .narrative1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 17px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(4) .narrative2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: rgba(207, 207, 207, 0.5);
@@ -254,28 +264,28 @@ body main .container:nth-child(5) {
 }
 
 body main .container:nth-child(5) .author-name {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 13px;
   color: #48556a;
 }
 
 body main .container:nth-child(5) .status-verified {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 10px;
   color: rgba(25, 33, 46, 0.5);
 }
 
 body main .container:nth-child(5) .narrative1 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
   font-size: 17px;
   color: #48556a;
 }
 
 body main .container:nth-child(5) .narrative2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: rgba(25, 33, 46, 0.5);
