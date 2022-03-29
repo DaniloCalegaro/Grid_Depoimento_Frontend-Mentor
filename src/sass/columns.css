@@ -15,21 +15,23 @@ body {
 }
 
 body main {
+  padding: 0 5rem;
   margin: auto;
-  width: 80vw;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'cont1 cont1 cont2 cont3' 'cont4 cont5 cont5 cont3';
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
 body main .container {
   border-radius: 0.5rem;
   padding: 1.8rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body main .container .header-author {
@@ -68,13 +70,18 @@ body main .container .narrative2 {
   margin-top: 1rem;
 }
 
+body main .container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 body main .container:nth-child(1) {
+  background-color: #7541c8;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: cont1;
   position: relative;
-  background-color: #7541c8;
 }
 
 body main .container:nth-child(1) .author-name {
@@ -296,5 +303,19 @@ body main .container:nth-child(5) img {
   height: 2rem;
   border: 2px solid rgba(207, 207, 207, 0.5);
   border-radius: 50%;
+}
+
+@media screen and (max-width: 420px) {
+  body main {
+    margin: auto;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'cont1' 'cont1' 'cont2' 'cont4' 'cont5' 'cont5' 'cont3' 'cont3';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+  }
 }
 /*# sourceMappingURL=columns.css.map */

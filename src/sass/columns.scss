@@ -16,6 +16,13 @@ $Light-grayish-blue: hsl(210, 46%, 95%);
   box-sizing: border-box;
 }
 
+@mixin border-img($border-color, $width) {
+  width: $width;
+  height: $width;
+  border: 2px solid $border-color;
+  border-radius: 50%;
+}
+
 @mixin styles-container($background-color, $color-highlight, $color-secundary) {
   background-color: $background-color;
 
@@ -52,35 +59,27 @@ $Light-grayish-blue: hsl(210, 46%, 95%);
   }
 }
 
-@mixin border-img($border-color, $width) {
-  width: $width;
-  height: $width;
-  border: 2px solid $border-color;
-  border-radius: 50%;
-}
-
 body {
   background-color: $Light-grayish-blue;
   width: 100vw;
   height: 100vh;
   display: flex;
-  //justify-content: center;
 
   main {
+    padding: 0 5rem;
     margin: auto;
-    width: 80vw;
-    //height: 50vh;
     display: grid;
     grid-template-areas:
       'cont1 cont1 cont2 cont3'
       'cont4 cont5 cont5 cont3';
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1.5rem;
 
     .container {
       border-radius: 0.5rem;
       padding: 1.8rem;
+      transition: all 0.3s;
 
       .header-author {
         width: 10rem;
@@ -112,15 +111,19 @@ body {
       }
     }
 
-    .container:nth-child(1) {
-      grid-area: cont1;
-      position: relative;
+    .container:hover {
+      transform: scale(1.05);
+    }
 
+    .container:nth-child(1) {
       @include styles-container(
         $Moderate-violet,
         $Light-gray,
         $Light-gray-opacity
       );
+
+      grid-area: cont1;
+      position: relative;
 
       .narrative1 {
         position: relative;
@@ -173,6 +176,25 @@ body {
         $Very-dark-grayish-blue,
         $Very-dark-blackish-blue-opacity
       );
+    }
+  }
+  @media screen and (max-width: 420px) {
+    main {
+      //height: 100vh;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-areas:
+        'cont1'
+        'cont1'
+        'cont2'
+        'cont4'
+        'cont5'
+        'cont5'
+        'cont3'
+        'cont3';
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
     }
   }
 }
