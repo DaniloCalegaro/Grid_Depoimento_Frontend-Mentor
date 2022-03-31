@@ -84,30 +84,32 @@ body main .container:nth-child(1) {
   position: relative;
 }
 
-body main .container:nth-child(1) .author-name {
+body main .container:nth-child(1) .format-text-bold, body main .container:nth-child(1) .author-name, body main .container:nth-child(1) .narrative1 {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
+}
+
+body main .container:nth-child(1) .format-text, body main .container:nth-child(1) .status-verified, body main .container:nth-child(1) .narrative2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+}
+
+body main .container:nth-child(1) .author-name {
   font-size: 13px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(1) .status-verified {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 10px;
   color: rgba(207, 207, 207, 0.5);
 }
 
 body main .container:nth-child(1) .narrative1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
   font-size: 17px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(1) .narrative2 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 13px;
   color: rgba(207, 207, 207, 0.5);
 }
@@ -124,7 +126,7 @@ body main .container:nth-child(1) .narrative1 {
   z-index: 1;
 }
 
-body main .container:nth-child(1) #quotation {
+body main .container:nth-child(1) .quotation {
   border: 0px;
   border-radius: 0;
   width: 6rem;
@@ -142,30 +144,32 @@ body main .container:nth-child(2) {
   background-color: #48556a;
 }
 
-body main .container:nth-child(2) .author-name {
+body main .container:nth-child(2) .format-text-bold, body main .container:nth-child(2) .author-name, body main .container:nth-child(2) .narrative1 {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
+}
+
+body main .container:nth-child(2) .format-text, body main .container:nth-child(2) .status-verified, body main .container:nth-child(2) .narrative2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+}
+
+body main .container:nth-child(2) .author-name {
   font-size: 13px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(2) .status-verified {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 10px;
   color: rgba(207, 207, 207, 0.5);
 }
 
 body main .container:nth-child(2) .narrative1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
   font-size: 17px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(2) .narrative2 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 13px;
   color: rgba(207, 207, 207, 0.5);
 }
@@ -184,30 +188,32 @@ body main .container:nth-child(3) {
   background-color: white;
 }
 
-body main .container:nth-child(3) .author-name {
+body main .container:nth-child(3) .format-text-bold, body main .container:nth-child(3) .author-name, body main .container:nth-child(3) .narrative1 {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
+}
+
+body main .container:nth-child(3) .format-text, body main .container:nth-child(3) .status-verified, body main .container:nth-child(3) .narrative2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+}
+
+body main .container:nth-child(3) .author-name {
   font-size: 13px;
   color: #48556a;
 }
 
 body main .container:nth-child(3) .status-verified {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 10px;
   color: rgba(25, 33, 46, 0.5);
 }
 
 body main .container:nth-child(3) .narrative1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
   font-size: 17px;
   color: #48556a;
 }
 
 body main .container:nth-child(3) .narrative2 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 13px;
   color: rgba(25, 33, 46, 0.5);
 }
@@ -227,30 +233,32 @@ body main .container:nth-child(4) {
   background-color: #19212e;
 }
 
-body main .container:nth-child(4) .author-name {
+body main .container:nth-child(4) .format-text-bold, body main .container:nth-child(4) .author-name, body main .container:nth-child(4) .narrative1 {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
+}
+
+body main .container:nth-child(4) .format-text, body main .container:nth-child(4) .status-verified, body main .container:nth-child(4) .narrative2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+}
+
+body main .container:nth-child(4) .author-name {
   font-size: 13px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(4) .status-verified {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 10px;
   color: rgba(207, 207, 207, 0.5);
 }
 
 body main .container:nth-child(4) .narrative1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
   font-size: 17px;
   color: #cfcfcf;
 }
 
 body main .container:nth-child(4) .narrative2 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 13px;
   color: rgba(207, 207, 207, 0.5);
 }
@@ -270,30 +278,32 @@ body main .container:nth-child(5) {
   background-color: white;
 }
 
-body main .container:nth-child(5) .author-name {
+body main .container:nth-child(5) .format-text-bold, body main .container:nth-child(5) .author-name, body main .container:nth-child(5) .narrative1 {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 600;
+}
+
+body main .container:nth-child(5) .format-text, body main .container:nth-child(5) .status-verified, body main .container:nth-child(5) .narrative2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+}
+
+body main .container:nth-child(5) .author-name {
   font-size: 13px;
   color: #48556a;
 }
 
 body main .container:nth-child(5) .status-verified {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 10px;
   color: rgba(25, 33, 46, 0.5);
 }
 
 body main .container:nth-child(5) .narrative1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
   font-size: 17px;
   color: #48556a;
 }
 
 body main .container:nth-child(5) .narrative2 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
   font-size: 13px;
   color: rgba(25, 33, 46, 0.5);
 }

@@ -26,30 +26,36 @@ $Light-grayish-blue: hsl(210, 46%, 95%);
 @mixin styles-container($background-color, $color-highlight, $color-secundary) {
   background-color: $background-color;
 
-  .author-name {
+  .format-text-bold {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
+  }
+
+  .format-text {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+  }
+
+  .author-name {
+    @extend .format-text-bold;
     font-size: 13px;
     color: $color-highlight;
   }
 
   .status-verified {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 500;
+    @extend .format-text;
     font-size: 10px;
     color: $color-secundary;
   }
 
   .narrative1 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
+    @extend .format-text-bold;
     font-size: 17px;
     color: $color-highlight;
   }
 
   .narrative2 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 500;
+    @extend .format-text;
     font-size: 13px;
     color: $color-secundary;
   }
@@ -130,7 +136,7 @@ body {
         z-index: 1;
       }
 
-      #quotation {
+      .quotation {
         border: 0px;
         border-radius: 0;
         width: 6rem;
